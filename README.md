@@ -46,24 +46,6 @@ Once the contract is deployed, you can interact with it using the following func
 
 3. **withdraw(uint256 _withdrawAmount)**: Use this function to withdraw funds from the contract. Only the contract owner can call this function. Provide the amount you want to withdraw as an argument. If the contract balance is less than the withdrawal amount, the transaction will revert with an `InsufficientBalance` error.
 
-## Example
-
-Here's an example of how you can interact with the contract using a Solidity script:
-
-```solidity
-// Assume the contract address and ABI are available
-Assessment contractInstance = Assessment(contractAddress);
-
-// Deposit 1 ether (wei) into the contract
-contractInstance.deposit{value: 1 ether}(1 ether);
-
-// Withdraw 0.5 ether (wei) from the contract
-contractInstance.withdraw(0.5 ether);
-
-// Get the current balance of the contract
-uint256 currentBalance = contractInstance.getBalance();
-```
-
 Remember to replace `contractAddress` with the actual address of the deployed contract.
 
 ## License
@@ -125,19 +107,6 @@ Once the contract is deployed, you can interact with it using the following func
 
 Here's an example of how you can interact with the contract using a Solidity script:
 
-```solidity
-// Assume the contract address and ABI are available
-Assessment contractInstance = Assessment(contractAddress);
-
-// Deposit 1 ether (wei) into the contract
-contractInstance.deposit{value: 1 ether}(1 ether);
-
-// Withdraw 0.5 ether (wei) from the contract
-contractInstance.withdraw(0.5 ether);
-
-// Get the current balance of the contract
-uint256 currentBalance = contractInstance.getBalance();
-```
 
 Remember to replace `contractAddress` with the actual address of the deployed contract.
 
