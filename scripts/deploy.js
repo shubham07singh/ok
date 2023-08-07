@@ -7,7 +7,7 @@
 const hre = require("hardhat");
 
 async function main() {
-  const initBalance = 10;
+  const initBalance = 5;
   const [deployer] = await ethers.getSigners();
   console.log("Deploying contracts with the account : ",deployer.address);
   const Assessment = await hre.ethers.getContractFactory("Assessment");
