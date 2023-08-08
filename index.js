@@ -115,6 +115,14 @@ export default function HomePage() {
       <style jsx>{`
         .container {
           text-align: center;
+          background-color:yellow ;
+          font-size: medium;
+          padding: 5px;
+         text-transform: uppercase;
+         border-radius: 40%;
+         cursor: pointer;
+         box-shadow:rgba(0, 0, 0, 0.092) solid;
+          margin: 15px;
         }
       `}
       </style>
